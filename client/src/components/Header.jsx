@@ -6,16 +6,16 @@ export default function Header() {
     <div>
     <header className='bg-green-800 shadow-md'>
         <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
-        <h1 className='fon-bold text-sm sm:text-xl flex flex-wrap'>
+        <h1 className='font-normal text-sm sm:text-xl flex flex-wrap'>
             <span className='text-slate-200'>Agro </span>
             <span className='text-slate-300'>Society</span>
 
         </h1>
-        <form className='bg-slate-100 p-3 rounded-lg flex items-center'>
+        {/* <form className='bg-slate-100 p-3 rounded-lg flex items-center'>
             <input type='text' placeholder='Search..' 
-            className='bg-transparent focus:outline-none w-24 sm:w-64'></input>
+            className='bg-transparent focus:outline-none w-24'></input>
             <FaSearch className='text-slate-600'/>
-        </form>
+        </form> */}
         <ul className='flex gap-4'>
             <Link to='/'>
             <li
@@ -30,6 +30,11 @@ export default function Header() {
             <Link to='/SignIn'>
             <li 
             className='sm:inline text-slate-200 hover:underline'>Sign in
+            </li>
+            </Link>
+            <Link to='/weather'>
+            <li 
+            className='sm:inline text-slate-200 hover:underline'>Weather
             </li>
             </Link>
         </ul>
