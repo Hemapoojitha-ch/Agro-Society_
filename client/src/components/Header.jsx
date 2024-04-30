@@ -1,12 +1,16 @@
 // import React from 'react'
 import {FaSearch} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
+import Agro_Logo from './../assets/Agro_icon/Agro_logo_1.png'
+import Weather_Logo from './../assets/Agro_icon/weather_logo.png'
+
 export default function Header() {
   return (
     <div>
     <header className='bg-green-800 shadow-md'>
         <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
         <h1 className='font-normal text-sm sm:text-xl flex flex-wrap'>
+          <img src={Agro_Logo} alt="Logo" className='w-7 h-7 mr-2 rounded bg-white'/>
             <span className='text-slate-200'>Agro </span>
             <span className='text-slate-300'>Society</span>
 
@@ -34,7 +38,7 @@ export default function Header() {
             </Link>
             <Link to='/weather'>
             <li 
-            className='sm:inline text-slate-200 hover:underline'>Weather
+            className='sm:inline text-slate-200 hover:underline'><img src={Weather_Logo} alt="Logo" className='w-7 h-7 mr-2 rounded'></img>
             </li>
             </Link>
         </ul>

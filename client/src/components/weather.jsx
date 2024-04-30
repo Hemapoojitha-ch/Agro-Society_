@@ -24,7 +24,7 @@ export default function weather() {
         </div>
       </nav>
       
-      <main className='w-full flex text-xl flex-wrap gap-8 py-4 px-[10%] items-center justify-center'>
+      <main className='w-full flex text-basis flex-wrap gap-8 py-4 px-[10%] items-center justify-center'>
         <WeatherCard
           place={thisLocation}
           windspeed={weather.wspd}
